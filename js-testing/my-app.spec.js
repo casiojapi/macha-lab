@@ -9,5 +9,11 @@ describe('my-app', () => {
             const result = add(1, 2);
             assert.equal(result, 3);
         });
+
+        it('is commutative', () => {
+            const left = add(666, 334);
+            const right = add(334, 666);
+            assert.equal(left, right);
+        });
     });
 });
