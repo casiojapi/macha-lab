@@ -3,6 +3,7 @@
     "mocha": "10.0.0"
   },
   "name": "testing-lab-casiojapi",
+  "private": true,
   "version": "1.0.0",
   "description": "js testing lab from rsk dev course",
   "main": "my-app.js",
@@ -82,7 +83,7 @@
     "yargs-parser": "^20.2.4"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha './**/*.spec.js'"
   },
   "author": "casiojapi",
   "license": "GPL-3.0"
