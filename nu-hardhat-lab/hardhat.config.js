@@ -1,5 +1,9 @@
 const fs = require('fs');
 
+//inject dep for testing
+require('@nomiclabs/hardhat-waffle');
+
+
 // npx mnemonics > .rsk-testnet-seed-phrase
 const rskTestnetSeedPhrase = fs
   .readFileSync('.rsk-testnet-seed-phrase')
@@ -60,6 +64,9 @@ module.exports = {
       }
 
     }
+  },
+  mocha: {
+    timeout: 60000,
   },
 };
 

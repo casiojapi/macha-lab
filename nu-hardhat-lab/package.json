@@ -1,6 +1,10 @@
 {
   "name": "nu-hardhat-lab",
   "private": true,
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test"
+  },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "2.0.6",
     "@nomiclabs/hardhat-waffle": "2.0.3",
