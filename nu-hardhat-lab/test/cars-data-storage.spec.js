@@ -20,6 +20,8 @@ describe('Cars - data sotrage', () => {
     });
 
     it('should init with zero cars', async () => {
-        // TODO
+        const initialCars = await cars.callStatic.numCars();
+
+        expect(initialCars).to.equal(0);
     });
 });
