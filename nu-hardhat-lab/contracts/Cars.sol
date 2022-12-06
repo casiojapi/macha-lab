@@ -9,6 +9,8 @@ contract Cars {
     enum CarStatus { driving, parked}
 
 
+    event CarHonk(uint256 indexed carId);
+
 
     struct Car {
         bytes3 colour;
