@@ -14,7 +14,9 @@ contract SuperHonk is ISuperHonk {
     function honk()
         public
     {
+        //sec purposes
+        require(tx.origin != msg.sender, "EOA not allowed");
         count += 1;
-        emit LoudSound(msg.sender);
+        emit LoudSound(tx.origin);
     }
 }

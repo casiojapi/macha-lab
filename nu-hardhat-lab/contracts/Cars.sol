@@ -81,6 +81,7 @@ contract Cars {
     ) public 
     onlyOwner(carId)
     {
+        emit CarHonk(carId);
         if (isLoud) {
             superHonk.honk();
         }
